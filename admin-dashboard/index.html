@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h1>User Dashboard</h1>
+        <a href="#">Projects</a>
+        <a href="#">Profile</a>
+        <a href="#">Settings</a>
+    </div>
+    <div class="top-menu">
+        <div class="top-menu-left">
+            <a href="#">Messages/Notifications</a>
+        </div>
+        <div class="top-menu-right">
+            <button id="logout-button">Logout</button>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Welcome to Your Dashboard</h1>
+        <div class="flex-buttons">
+            <button class="dashboard-button">Assign New Projects</button>
+            <button class="dashboard-button">Completed Projects</button>
+            <button class="dashboard-button">Assigned Projects</button>
+        </div>
+
+        <div class="dashboard-flex-container">
+            <div class="dashboard-section">
+                <h2>Projects</h2>
+                <div class="project-list">
+                    <div class="project-item">
+                        <span class="project-info">ID: 1</span>
+                        <span class="project-info">Name: Project 1</span>
+                        <span class="project-info">Description: This is project 1 description.</span>
+                        <span class="project-info">Assigned to: User A</span>
+                        <div class="project-actions">
+                            <button class="edit-button">Edit</button>
+                            <button class="delete-button">Delete</button>
+                        </div>
+                    </div>
+                    <!-- You can add more project items as needed -->
+                </div>
+            </div>
+            <div class="dashboard-section">
+                <h2>Users</h2>
+                <!-- Content related to Users -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

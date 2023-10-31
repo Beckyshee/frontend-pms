@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h1>User Dashboard</h1>
+        <a href="#">Projects</a>
+        <a href="#">Profile</a>
+        <a href="#">Settings</a>
+    </div>
+    <div class="top-menu">
+        <div class="top-menu-left">
+            <a href="#">Messages/Notifications</a> <!-- New link for Messages/Notifications -->
+        </div>
+        <div class="top-menu-right">
+            <button id="logout-button">Logout</button> <!-- Logout button -->
+        </div>
+    </div>
+    <div class="content">
+        <h1>Welcome to Your Dashboard</h1>
+        <h2>My Projects</h2>
+
+        <div class="project-card">
+            <ul id="project-list">
+                <!-- Projects will be dynamically added here using JavaScript -->
+            </ul>
+
+            <ul id="project-list">
+                <li class="project-item">
+                    Project 1
+                    <button class="complete-button">Complete</button>
+                    <button class="pending-button">Pending</button>
+                </li>
+                <li class="project-item">
+                    Project 2
+                    <button class="complete-button">Complete</button>
+                    <button class="pending-button">Pending</button>
+                </li>
+                <li class="project-item">
+                    Project 3
+                    <button class="complete-button">Complete</button>
+                    <button class="pending-button">Pending</button>
+                </li>
+                <!-- Add more projects as needed -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
