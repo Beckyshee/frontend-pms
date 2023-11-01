@@ -20,7 +20,7 @@
 }
 
 .content {
-    margin-left: 260px; /* Adjust for sidebar width */
+    margin-left: 260px;
     padding: 20px;
 }
 
@@ -39,7 +39,7 @@
     background-color: #0056b3;
 }
 
-/* CSS for the project list and buttons */
+
 .project-item {
     margin-bottom: 10px;
     padding: 10px;
@@ -62,25 +62,25 @@
     background-color: #0056b3;
 }
 
-/* CSS for the icons (FontAwesome) */
+/* icons*/
 i {
     font-size: 24px;
     color: #28a745;
     display: none;
 }
 .project-card {
-    background-color: #a2c8d1; /* Ice blue color */
+    background-color: #a2c8d1; 
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Style for the top menu section */
+
 .top-menu {
     display: flex;
     justify-content: space-between;
-    background-color: #333; /* Background color */
-    color: #fff; /* Text color */
+    background-color: #333; 
+    color: #fff; 
     padding: 10px 20px;
 }
 
@@ -91,23 +91,23 @@ i {
 
 .top-menu-left a {
     text-decoration: none;
-    color: #fff; /* Text color */
-    margin-right: 20px; /* Add spacing between the link and button */
+    color: #fff;
+    margin-right: 20px; 
 }
 
-/* Style for the "Logout" button */
+/* logout */
 .top-menu-right button {
-    background-color: #e74c3c; /* Button background color */
-    color: #fff; /* Button text color */
+    background-color: #e74c3c; 
+    color: #fff; 
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-/* Hover effect for the button */
+
 .top-menu-right button:hover {
-    background-color: #c0392b; /* Button background color on hover */
+    background-color: #c0392b; 
 }
 .flex-buttons {
     display: flex;
@@ -137,6 +137,8 @@ i {
 }
 
 .dashboard-section {
+    margin-bottom: 20px;
+    padding: 10px;
     flex: 1;
     background-color: #f2f2f2;
     padding: 20px;
@@ -148,7 +150,7 @@ i {
     margin-top: 0;
 }
 
-/* Add this to your style.css file */
+
 .project-list {
     display: flex;
     flex-direction: column;
@@ -186,3 +188,83 @@ i {
 .edit-button:hover, .delete-button:hover {
     background-color: #2980b9;
 }
+
+.project-table{
+    margin-bottom: 30px;
+}
+
+.project-table, .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.project-table th, .user-table th, .project-table td, .user-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.project-table th, .user-table th {
+    background-color: #f2f2f2;
+}
+
+.user-table{
+    margin-bottom: 20px;
+}
+
+
+.dashboard-button {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.dashboard-button:hover {
+    background-color: #27ae60;
+}
+#createProjectButton {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#createProjectButton:hover {
+    background-color: #27ae60;
+}
+
+.popup-form {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.popup-form h2 {
+    margin: 0;
+}
+
+.popup-form form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+

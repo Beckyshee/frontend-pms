@@ -8,9 +8,9 @@
 </head>
 <body>
     <div class="sidebar">
-        <h1>User Dashboard</h1>
-        <a href="#">Projects</a>
-        <a href="#">Profile</a>
+        <h1>Admin Dashboard</h1>
+        <a href="#" id="projectsBar">Projects</a>
+        <a href="admin-dashboard/userprofile.html">Profile</a>
         <a href="#">Settings</a>
     </div>
     <div class="top-menu">
@@ -24,32 +24,80 @@
     <div class="content">
         <h1>Welcome to Your Dashboard</h1>
         <div class="flex-buttons">
-            <button class="dashboard-button">Assign New Projects</button>
+            <button class="dashboard-button" id="assignNewProjectButton">Add New Project</button>
             <button class="dashboard-button">Completed Projects</button>
             <button class="dashboard-button">Assigned Projects</button>
         </div>
 
         <div class="dashboard-flex-container">
-            <div class="dashboard-section">
+            <div class="dashboard-section" id="projectSecton">
                 <h2>Projects</h2>
-                <div class="project-list">
-                    <div class="project-item">
-                        <span class="project-info">ID: 1</span>
-                        <span class="project-info">Name: Project 1</span>
-                        <span class="project-info">Description: This is project 1 description.</span>
-                        <span class="project-info">Assigned to: User A</span>
-                        <div class="project-actions">
+                <table class="project-table">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Assigned to</th>
+                        <th>Completion Date</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Project 1</td>
+                        <td>This is project 1 description.</td>
+                        <td>User A</td>
+                        <td>2023-10-30</td>
+                        <td>
                             <button class="edit-button">Edit</button>
                             <button class="delete-button">Delete</button>
-                        </div>
-                    </div>
-                    <!-- You can add more project items as needed -->
-                </div>
+                        </td>
+                    </tr>
+                    
+                </table>
             </div>
             <div class="dashboard-section">
                 <h2>Users</h2>
-                <!-- Content related to Users -->
+                <table class="user-table">
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone Number</th>
+                        <th>Email</th>
+                    </tr>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>(555) 123-4567</td>
+                        <td>john.doe@example.com</td>
+                    </tr>
+                    
+                </table>
             </div>
+        </div>
+
+        <div>
+            <button id="createProjectButton">Create New Project</button>
+        </div>
+
+        <!-- add new project form-->
+        <div id="assignProjectForm" class="popup-form">
+            <h2>Add New Project</h2>
+            <form id="projectForm">
+                <label for="projectID">ID:</label>
+                <input type="text" id="projectID" required>
+                <label for="projectName">Name:</label>
+                <input type="text" id="projectName" required>
+                <label for="projectDescription">Description:</label>
+                <textarea id="projectDescription" required></textarea>
+                <!-- <label for="projectAssignedTo">Assigned to:</label> -->
+                <label for="projectAssignedTo">Assigned to:</label>
+<select id="projectAssignedTo" required>
+    <option value="userA">User A</option>
+    <option value="userB">User B</option>
+    <option value="userC">User C</option>
+                <input type="text" id="projectAssignedTo" required>
+                <label for="completionDate">Completion Date:</label>
+                <input type="date" id="completionDate" required>
+                <button id="doneButton">Done</button>
+            </form>
         </div>
     </div>
     <script src="script.js"></script>
